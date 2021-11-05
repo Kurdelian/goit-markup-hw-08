@@ -1,21 +1,16 @@
 .site-nav__logo {
-    color: #000000;
-    @media screen and (min-width: 480px) {
-        padding-top: 16px;
-        padding-bottom: 16px; 
-        margin-right: 276px;
-    }
+  color: #000000;
+  padding-top: 16px;
+  padding-bottom: 16px; 
     @media screen and (min-width: 768px) {
         padding-top: 26px;
         padding-bottom: 26px; 
-        margin-right: 88px;
     }
     @media screen and (min-width: 1200px) {
-        margin-right: 93px;
         padding-top: 24px;
         padding-bottom: 24px;  
     }
-}
+  }
 
 .header__box {
   display: flex;
@@ -40,7 +35,7 @@
   
   .header__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -65,8 +60,6 @@
     &:hover,
     &:focus {
         color:var(--accent-color);
-    }
-    @media screen and (min-width: 480px) {
         font-size: 40px;
         line-height: 1.2;
         margin-bottom: 32px;
@@ -124,8 +117,6 @@
     font-size: 14px;
     line-height: 1.1;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 @media screen and (min-width: 1200px) {
   padding-top: 32px;

@@ -22,17 +22,15 @@
 
     .portfolio {
       display: flex;
-      justify-content: center; 
-      @media screen and (max-width: 767px) {
-          flex-wrap: wrap; 
-          justify-content: flex-start;  
-          margin-bottom: 40px;
-      }
+      flex-wrap: wrap; 
+      justify-content: flex-start;  
+      margin-bottom: 40px;
       @media screen and (min-width: 768px) {
-          margin-bottom: 14px;
+          margin-bottom: 30px;
+          justify-content: center;
       }
       @media screen and (min-width: 1200px) {
-      margin-bottom: 34px;
+      margin-bottom: 50px;
     }
 }
     
