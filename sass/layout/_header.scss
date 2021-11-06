@@ -57,21 +57,21 @@
     font-weight: 500;
     color: var(--title-text-color);
     letter-spacing: 0.02em;
-    &:hover,
-    &:focus {
-        color:var(--accent-color);
-        font-size: 40px;
-        line-height: 1.2;
-        margin-bottom: 32px;
-        @media screen and (min-width: 768px)  {
-            position: relative;
-            font-size: 14px;
-            line-height: 1.1;
-            padding-top: 32px;
-            padding-bottom: 32px;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    position: relative;
+    @media screen and (min-width: 768px)  {
+      font-size: 14px;
+      line-height: 1.1;
+      padding-top: 32px;
+      padding-bottom: 32px;
         }
+        &:hover,
+        &:focus {
+            color:var(--accent-color);
+          }
     }
-}
   
 .header-connection {
   @media screen and (min-width: 1200px) {
@@ -139,3 +139,5 @@
     margin-right: 10px;
 }
 }
+
+

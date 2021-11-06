@@ -38,7 +38,6 @@
 
 .mobile-menu__list {
     display: flex;
-    justify-content: space-evenly;
 }
 
 .mobile-menu__item {
@@ -61,23 +60,10 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 
-.mobile-nav__item { 
-    margin-bottom: 32px;
-    &:last-child{
-        margin-bottom: 0px;
-    } 
-    }
-
-
-.mobile-box__item {
-    margin-bottom: 32px;
-    &:last-child {
-        margin-bottom: 0px;
-    }
-}
 
 .mobile-box__link {
     color: var(--accent-color);

@@ -144,6 +144,19 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    display: block;
+    bottom: 0px;
+  }
+}
+
 .site-nav__logo {
   color: #000000;
   padding-top: 16px;
@@ -215,23 +228,23 @@ body {
   font-weight: 500;
   color: var(--title-text-color);
   letter-spacing: 0.02em;
-}
-
-.site-nav__link:hover, .site-nav__link:focus {
-  color: var(--accent-color);
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 32px;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
-  .site-nav__link:hover, .site-nav__link:focus {
-    position: relative;
+  .site-nav__link {
     font-size: 14px;
     line-height: 1.1;
     padding-top: 32px;
     padding-bottom: 32px;
   }
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -364,7 +377,6 @@ body {
 
 .mobile-menu__list {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .mobile-menu__item::after {
@@ -386,22 +398,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-right: 10px;
-}
-
-.mobile-nav__item {
-  margin-bottom: 32px;
-}
-
-.mobile-nav__item:last-child {
-  margin-bottom: 0px;
-}
-
-.mobile-box__item {
-  margin-bottom: 32px;
-}
-
-.mobile-box__item:last-child {
-  margin-bottom: 0px;
+  padding-left: 10px;
 }
 
 .mobile-box__link {
@@ -426,6 +423,16 @@ body {
 .mobile-menu__button_open .mobile-menu__icon_open:hover,
 .mobile-menu__button_open .mobile-menu__icon_open:focus {
   fill: var(--accent-color);
+}
+
+.mobile-nav__item,
+.mobile-box__item {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__item:last-child,
+.mobile-box__item:last-child {
+  margin-bottom: 0px;
 }
 
 .hero {
@@ -1140,8 +1147,13 @@ body {
   outline: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  min-width: 450px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .mailing__input {
+    min-width: 450px;
+  }
 }
 
 .mailing__input::placeholder {
@@ -1156,6 +1168,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .mailing__input {
+    margin-bottom: 0px;
     min-width: 358px;
     margin-right: 12px;
     padding: 15px;
