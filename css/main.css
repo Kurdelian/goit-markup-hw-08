@@ -425,16 +425,6 @@ body {
   fill: var(--accent-color);
 }
 
-.mobile-nav__item,
-.mobile-box__item {
-  margin-bottom: 32px;
-}
-
-.mobile-nav__item:last-child,
-.mobile-box__item:last-child {
-  margin-bottom: 0px;
-}
-
 .hero {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-bg-mob-1x.png);
@@ -922,6 +912,7 @@ body {
 @media screen and (min-width: 1200px) {
   .project__item {
     width: calc((100% - 60px) / 3);
+    margin-right: 30px;
   }
   .project__item:nth-child(3n + 3) {
     margin-right: 0px;
