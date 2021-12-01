@@ -404,6 +404,11 @@ body {
   padding-left: 10px;
 }
 
+.mobile-box {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .mobile-box__link {
   color: var(--accent-color);
 }
