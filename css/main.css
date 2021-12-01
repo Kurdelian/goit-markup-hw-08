@@ -345,13 +345,16 @@ body {
   z-index: 30;
   transform: translateX(100%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .mobile-menu.is-open {
   transform: translateX(0);
+}
+
+.mobile-menu__tumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mobile-menu__button_open {
@@ -423,6 +426,16 @@ body {
 .mobile-menu__button_open .mobile-menu__icon_open:hover,
 .mobile-menu__button_open .mobile-menu__icon_open:focus {
   fill: var(--accent-color);
+}
+
+.mobile-nav__item,
+.mobile-box__item {
+  margin-bottom: 32px;
+}
+
+.mobile-nav__item:last-child,
+.mobile-box__item:last-child {
+  margin-bottom: 0px;
 }
 
 .hero {
